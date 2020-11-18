@@ -33,7 +33,7 @@ jQuery(function($) {
   
     function getVoices() {
       // Regex to match all English language tags e.g en, en-US, en-GB
-      let langRegex = /^en(-[a-z]{2})?$/i;
+      let langRegex = /^hi-IN?$/i;
   
       // Get the available voices and filter the list to only have English speakers
       VOICES = SYNTHESIS.getVoices()
@@ -124,8 +124,8 @@ jQuery(function($) {
           if (voice) {
             quoteUtterance.voice = voice.voice;
             //Voice Modulations - Affects Different Voice differently
-            quoteUtterance.pitch = 0.5;
-            quoteUtterance.rate = 2;
+            quoteUtterance.pitch = 1;
+            quoteUtterance.rate = 1;
             quoteUtterance.volume = 0.8;
           }
   
